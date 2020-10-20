@@ -19,6 +19,12 @@ class LikeController extends Controller
         $this->middleware('JWT');
     }
 
+
+    /**
+     *  TO-DO
+     *  User id will be change after several correction steps have been done.
+     *  Dont forget !
+     */
     public function likeIt(Reply $reply){
         $reply->like()->create([
             'user_id' => '1'
